@@ -6,11 +6,12 @@
 }
 .followers-Column {
   background-color: red;
-  width: 500px;
+  width: 200px;
   height: 800px;
 }
 
 .feed {
+  width: 500px;
   background-color: wheat;
 }
 
@@ -20,7 +21,7 @@
   height: 400px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: row;
 }
