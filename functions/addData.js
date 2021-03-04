@@ -16,11 +16,6 @@ exports.handler = async function (event, context, callback){
             .namespace(process.env.ASTRA_DB_KEYSPACE)
             .collection(collection)
 
-        const data = [
-            {
-                
-            }
-        ]
 
         try {
             await posts.create()
