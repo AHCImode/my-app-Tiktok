@@ -18,7 +18,7 @@ exports.handler = async function (event, context, callback){
 
 
         try {
-            await posts.create("a post", {title: "my first post",})
+            await posts.create("a post",{ name:"NEWPOST"});
             return {
                 statusCode: 200
             }
