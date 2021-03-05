@@ -10,16 +10,16 @@ exports.handler = async function (event, context, callback){
             username: process.env.ASTRA_DB_USERNAME,
             password: process.env.ASTRA_DB_PASSWORD,
         })
-
-        console.log()
+          
         const posts = astraClient
             .namespace(process.env.ASTRA_DB_KEYSPACE)
             .collection(collection)
 
 
         try {
+            await posts.create()
             return {
-                statusCode: 200
+                statusCode: 200 
             }
         } 
         
