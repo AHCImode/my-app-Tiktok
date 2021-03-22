@@ -47,6 +47,7 @@ if (users)
 console.log(descendingUsers)
 
 return (
+  
     <>
     {descendingUsers && (
       <div className='container'>
@@ -70,6 +71,7 @@ return (
                   key={index} user={notFollowingUser}
                   toggleFollow={userToToggle => setUserToToggle(userToToggle)}
 		  	        />)
+                
 		  	      )}
             </div>
           </div>
